@@ -53,7 +53,7 @@ ClassMethod test1POST() As %Status [ Language = objectscript ]
 	#dim ex As %Exception.AbstractException
 	#dim %request As %CSP.Request
 	set status=$$$OK
-	hang 20
+	//hang 20
 	try {
 		set moji=%request.Get("q")
 		//Body

@@ -52,6 +52,14 @@ ObjectScriptエクステンションで提供される「Debug REST Service」�
 5. Bodyの指定が必要であれば「BODY」タブで指定
 ![](./images/Body.png)
 
+
+    - 「BODY」タブを指定した場合は、「HEADERS」タブに以下、**小文字で**指定してください（大小文字混在のContent-Typeではなくすべて小文字で指定してください）
+
+        `content-type:application/json;charset=utf-8`
+
+        ![](/images/Header.png)
+
+
 6. Start Debuggingボタンをクリックしてデバッグを開始
     
     開始後は、以下のボタンを利用してデバッグを進めます。
@@ -60,8 +68,8 @@ ObjectScriptエクステンションで提供される「Debug REST Service」�
     ![](./images/debug-icon.png)
 
 
-    >※　2023/2/7時点で確認できている不具合：「Debug REST Service」で実行するデバッグで、「QUERY PARAMETERS」と「BODY」に日本語を含めた場合、デバッグウィンドウの「VARIABLES（変数）」を表示するウィンドウ上の表記が文字化けします。（[問題報告中](https://github.com/intersystems-community/vscode-objectscript/issues/1078)です。例はBODYに日本語を指定した場合の例）
-    ![](./images/body-garbled.png)
+    >※　2023/2/14時点の情報：「Debug REST Service」で実行するデバッグで、「QUERY PARAMETERS」に日本語を含めた場合、デバッグウィンドウの「VARIABLES（変数）」を表示するウィンドウ上の表記が文字化けしますが将来のリリースで文字化けは[解消されます](https://github.com/intersystems-community/vscode-objectscript/pull/1081)。）
+    ![](./images/queryparameter-garbled.png)
     VSCodeの「Debug REST Service」メニューではなく、RESTクライアントなどの外部クライアントから実行する場合は文字化けが起きません。方法詳細は、[2.プロセスにアタッチして実行する ](#2プロセスにアタッチして実行する)の手順をご参照ください。
 
 
