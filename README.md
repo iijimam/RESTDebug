@@ -59,6 +59,7 @@ ObjectScriptエクステンションで提供される「Debug REST Service」�
 
         ![](/images/Header.png)
 
+        ※[将来のリリース](https://github.com/intersystems-community/vscode-objectscript/pull/1092)で解消される予定です（`Content-Type`の指定は不要となり、正しく日本語も解釈されるように変更されます）。
 
 6. Start Debuggingボタンをクリックしてデバッグを開始
     
